@@ -1,10 +1,14 @@
 package playwrightexam.docker;
+import org.testng.annotations.Test;
+
 import com.microsoft.playwright.Browser; 
 import com.microsoft.playwright.BrowserType; 
 import com.microsoft.playwright.Page; 
 import com.microsoft.playwright.Playwright;
 public class App { 
-public static void main(String[] args) {       
+//public static void main(String[] args) {  
+	@Test	
+	public void testLogin() {
 
         Playwright playwright = Playwright.create(); 
 
